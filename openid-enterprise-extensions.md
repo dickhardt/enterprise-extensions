@@ -71,7 +71,7 @@ This specification defines the following terms:
 
 # ID Token Claims
 
-An ID Token is defined in Section 2 of [OpenID Connect Core 1.0][#OpenID Connect Core 1.0].
+An ID Token is defined in Section 2 of [OpenID Connect Core 1.0](#OpenID Connect Core 1.0). 
 
 Following are OPTIONAL claims that may be included in an ID Token:
 
@@ -83,19 +83,10 @@ The `session_expiry` claim is a JSON integer that represents the Unix timestamp 
 
 The `tenant` claim is an opaque JSON string that represents a tenant identifier and MAY have the value `personal`, `organization` or a stable OP unique value for multi-tenant OPs. The `personal` value is reserved for when Accounts are managed by individuals. The `organization` value is reserved for Accounts managed by an organization.
 
-## groups
-
-The `groups` claim is a JSON array of of zero ore more opaque JSON strings that each represent a group that the user belongs to. Metadata about a group and how to obtain it are out of scope of this document.
-
-## roles
-
-The `roles` claim is a JSON array of of zero ore more opaque JSON strings that each represent a tole that the user has to. Metadata about a role and how to obtain it are out of scope of this document.
-
-
 
 # Authentication Request Parameters
 
-An Authentication request is defined in Section 3.1.2.1 of [OpenID Connect Core 1.0][#OpenID Connect Core 1.0].
+An Authentication request is defined in Section 3.1.2.1 of [OpenID Connect Core 1.0](#OpenID Connect Core 1.0).
 
 Following are OPTIONAL parameters that may be included in an Authentication Request:
 
@@ -109,7 +100,7 @@ The `domain_hint` parameter provides a hint for the OP to determine which Tenant
 
 # Login from a Third Party Parameters
 
-Initiating a login from a third party and a login initiation endpoint are defined in Section 4 of [OpenID Connect Core 1.0][#OpenID Connect Core 1.0]. 
+Initiating a login from a third party and a login initiation endpoint are defined in Section 4 of [OpenID Connect Core 1.0](#OpenID Connect Core 1.0). 
 
 Following are OPTIONAL parameters that may be included in request to the login initiation endpoint:
 
@@ -147,7 +138,7 @@ The `client_id` value the RP should use when making the Authentication Request. 
 ## Normative References
 
 - **[RFC2119]** Bradner, S. “Key words for use in RFCs to Indicate Requirement Levels,” *RFC 2119*, March 1997.
-- **OpenID Connect Core 1.0** – “OpenID Connect Core 1.0 incorporating errata set 1,” available at <https://openid.net/specs/openid-connect-core-1_0.html>.
+- **[OpenID Connect Core 1.0]** – “OpenID Connect Core 1.0 incorporating errata set 1,” available at <https://openid.net/specs/openid-connect-core-1_0.html>. 
 
 ## Informative References
 
