@@ -1,6 +1,6 @@
 %%%
-title = "OpenID Enterprise Extensions 1.0 - draft 00"
-abbrev = "openid-enterprise-extensions"
+title = "OpenID Connect Enterprise Extensions 1.0 - draft 00"
+abbrev = "openid-connect-enterprise-extensions"
 ipr = "none"
 workgroup = "OpenID Connect"
 keyword = ["security", "openid", "enterprise"]
@@ -30,7 +30,7 @@ organization="Independent"
 
 .# Abstract
 
-OpenID Connect 1.0 has become a popular choice for single sign on in enterprise use cases. To improve interoperability, OpenID Enterprise Extensions specifies a number of common or desirable extensions to OpenID Connect.
+OpenID Connect 1.0 has become a popular choice for single sign on in enterprise use cases. To improve interoperability, OpenID Connect Enterprise Extensions specifies a number of common or desirable extensions to OpenID Connect.
 
 
 
@@ -43,7 +43,7 @@ OpenID Connect 1.0 is a widely adopted identity protocol that enables client app
 
 Initial adoption of OpenID Connect was by sites providing personal identity to applications. OpenID Connect has become a popular choice in enterprise use cases, and implementors have defined their own extensions for use cases that were not addressed in the original specification. 
 
-To improve interoperability between systems, OpenID Enterprise Extensions specifies optional claims that may be included in an ID Token, optional parameters that may be included in an authentication request, and optional parameters optional parameters that may be included in when initiating login from a third party.
+To improve interoperability between systems, OpenID Connect Enterprise Extensions specifies optional claims that may be included in an ID Token, optional parameters that may be included in an authentication request, and optional parameters optional parameters that may be included in when initiating login from a third party.
 
 
 
