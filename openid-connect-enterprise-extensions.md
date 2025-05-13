@@ -90,13 +90,14 @@ An Authentication request is defined in Section 3.1.2.1 of [OpenID Connect Core 
 
 Following are OPTIONAL parameters that may be included in an Authentication Request:
 
+## domain_hint
+
+The `domain_hint` parameter provides a hint for the OP to determine which Tenant to present to the user to authenticate to.
+
 ## tenant
 
 The `tenant` identifier per the `tenant` claim for the OP Tenant that the RP would like the user to be authenticated to. Passing a `tenant` value of `personal` indicates the RP would like the user to use an account managed by user. Passing a `tenant` value of `organization` indicates the RP would like the user to use an account managed by an organization.
 
-## domain_hint
-
-The `domain_hint` parameter provides a hint for the OP to determine which Tenant to present to the user to authenticate to.
 
 # Login from a Third Party Parameters
 
@@ -104,18 +105,17 @@ Initiating a login from a third party and a login initiation endpoint are define
 
 Following are OPTIONAL parameters that may be included in request to the login initiation endpoint:
 
-## tenant
+## client_id
 
-The `tenant` value to be included in the Authentication Request.
+The `client_id` value the RP should use when making the Authentication Request. This allows an multi-tenant application that hosts multiple tenants, each represented by a different `client_id`, to know which `client_id` to use.
 
 ## domain_hint
 
 The `domain_hint` value to be included in the Authentication Request.
 
-## client_id
+## tenant
 
-The `client_id` value the RP should use when making the Authentication Request. This allows an multi-tenant application that hosts multiple tenants, each represented by a different `client_id`, to know which `client_id` to use.
-
+The `tenant` value to be included in the Authentication Request.
 
 
 # Security Considerations
